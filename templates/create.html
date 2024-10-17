@@ -1,0 +1,15 @@
+{% extends  'base.html' %}
+
+{% block title %} create {% endblock %}
+
+{% block content %}
+
+
+    <p>create page</p>
+    <form action="" method="POST" novalidate>
+        {% csrf_token %}
+        {{form.as_p}}
+    <input type="submit" value="create">
+    </form>
+
+{% endblock %}
